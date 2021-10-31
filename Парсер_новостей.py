@@ -5,7 +5,7 @@ import pandas as pd
 import re
 from user_agent import generate_user_agent
 
-# Генерируем случайного пользовательского агента, чтобы не заблокировали
+# Генерируем случайного пользовательского агента
 headers = {'User-Agent': generate_user_agent(device_type="desktop", os=('mac', 'linux', 'win'))}
 
 # Основная функция программы - создает новостную подборку по ключевым словам в интересущем источнике
