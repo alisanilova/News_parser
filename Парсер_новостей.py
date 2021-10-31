@@ -22,9 +22,8 @@ def get_news(source, keywords):
             keys_in_news = []
             for keyword in keywords:
                 if keyword in name.text.lower():
-                    news_attributes = []
                     keys_in_news.append(keyword)
-
+                    news_attributes = []
                     # Исключаем дублирование новостей, если в новости присутствует несколько ключевых слов
                     if name.text.strip() in [news_digest[i][0] for i in range(len(news_digest))]:
                         continue
