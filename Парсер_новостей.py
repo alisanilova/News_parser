@@ -52,7 +52,7 @@ df.to_csv(file_name, encoding="utf-16", sep="|")
 
 print("Завершено успешно")
 
-# Попытка отправить результат по почте. Работала криво, меня заблокировали за подозрение на спам, оставила в коде для разбора
+# Для отправки результата по почте:
 #import smtplib
 #smtp_obj = smtplib.SMTP('smtp.yandex.ru', 587)
 #smtp_obj.starttls()
